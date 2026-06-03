@@ -1,0 +1,16 @@
+# NAME: Public_Proxy
+# DESCRIPTION: Custom public domains routed by a Clash rule-provider.
+# UPDATED: 2026-06-04
+# DOMAIN-KEYWORD: 10
+# TOTAL: 10
+payload:
+  - DOMAIN-KEYWORD,docker.com
+  - DOMAIN-KEYWORD,jable.tv
+  - DOMAIN-KEYWORD,github.com
+  - DOMAIN-KEYWORD,githubusercontent.com
+  - DOMAIN-KEYWORD,thetvdb.com
+  - DOMAIN-KEYWORD,telegram.org
+  - DOMAIN-KEYWORD,pachongbo.site
+  - DOMAIN-KEYWORD,movie-pilot.org
+  - DOMAIN-KEYWORD,themoviedb.org
+  - DOMAIN-KEYWORD,smoot.apple.com
