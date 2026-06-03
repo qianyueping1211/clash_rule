@@ -1,0 +1,15 @@
+# NAME: AppleProxy
+# DESCRIPTION: Custom Apple-related domains routed by a Clash rule-provider.
+# UPDATED: 2026-06-04
+# DOMAIN-KEYWORD: 9
+# TOTAL: 9
+payload:
+  - DOMAIN-KEYWORD,smoot.apple.com
+  - DOMAIN-KEYWORD,cp4.cloudflare.com
+  - DOMAIN-KEYWORD,quzzoni.apple.com
+  - DOMAIN-KEYWORD,gspe1-ssl.ls.apple.com
+  - DOMAIN-KEYWORD,apple-relay.akamaized.net
+  - DOMAIN-KEYWORD,apple-relay.apple.com
+  - DOMAIN-KEYWORD,apple-relay.cloudflare.com
+  - DOMAIN-KEYWORD,apple-relay.fastly-edge.com
+  - DOMAIN-KEYWORD,apple-relay.mask.apple-dns.net
