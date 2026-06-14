@@ -1,0 +1,7 @@
+# NAME: ChinaProxy
+# DESCRIPTION: Custom Apple-related domains routed by a Clash rule-provider.
+# UPDATED: 2026-06-04
+# DOMAIN-KEYWORD: 9
+# TOTAL: 9
+payload:
+  - DOMAIN-KEYWORD,bonc.com.cn
