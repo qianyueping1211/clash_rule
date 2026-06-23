@@ -1,12 +1,11 @@
 # NAME: DirectIP
 # DESCRIPTION: Custom IP ranges routed directly by a Clash rule-provider.
 # UPDATED: 2026-06-23
-# IP-CIDR: 6
-# TOTAL: 6
+# IP-CIDR: 5
+# TOTAL: 5
 payload:
   - IP-CIDR,36.163.157.14/32,no-resolve
   - IP-CIDR,109.244.255.252/32,no-resolve
   - IP-CIDR,109.244.190.112/32,no-resolve
-  - IP-CIDR,175.27.22.187/32,no-resolve
+  - IP-CIDR,175.27.0.0/16,no-resolve
   - IP-CIDR,43.137.215.210/32,no-resolve
-  - IP-CIDR,175.27.37.31/32,no-resolve
