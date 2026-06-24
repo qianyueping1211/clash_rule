@@ -1,9 +1,11 @@
 # NAME: ChinaProxy
-# DESCRIPTION: Custom Apple-related domains routed by a Clash rule-provider.
-# UPDATED: 2026-06-04
-# DOMAIN-KEYWORD: 9
-# TOTAL: 9
+# DESCRIPTION: Custom China direct domains routed by a Clash rule-provider.
+# UPDATED: 2026-06-24
+# DOMAIN: 1
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 1
+# TOTAL: 3
 payload:
   - DOMAIN-KEYWORD,bonc.com.cn
   - DOMAIN,btrace.qq.com
-  - DOMAIN-KEYWORD,iepose.com
+  - DOMAIN-SUFFIX,iepose.com
