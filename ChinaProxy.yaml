@@ -3,12 +3,13 @@
 # UPDATED: 2026-06-24
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 4
-# TOTAL: 6
+# DOMAIN-SUFFIX: 5
+# TOTAL: 7
 payload:
   - DOMAIN-KEYWORD,bonc.com.cn
   - DOMAIN,btrace.qq.com
   - DOMAIN-SUFFIX,iepose.com
   - DOMAIN-SUFFIX,minimax.io
   - DOMAIN-SUFFIX,minimax.chat
+  - DOMAIN-SUFFIX,minimaxi.com
   - DOMAIN-SUFFIX,hailuoai.video
