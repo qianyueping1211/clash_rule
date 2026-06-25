@@ -1,9 +1,15 @@
 # NAME: AppleProxy
 # DESCRIPTION: Custom Apple-related domains routed by a Clash rule-provider.
-# UPDATED: 2026-06-04
+# UPDATED: 2026-06-25
+# DOMAIN-SUFFIX: 5
 # DOMAIN-KEYWORD: 9
-# TOTAL: 9
+# TOTAL: 14
 payload:
+  - DOMAIN-SUFFIX,itunes.apple.com
+  - DOMAIN-SUFFIX,mzstatic.com
+  - DOMAIN-SUFFIX,icloud.com
+  - DOMAIN-SUFFIX,app-analytics-services.com
+  - DOMAIN-SUFFIX,icloud-content.com
   - DOMAIN-KEYWORD,smoot.apple.com
   - DOMAIN-KEYWORD,cp4.cloudflare.com
   - DOMAIN-KEYWORD,quzzoni.apple.com
