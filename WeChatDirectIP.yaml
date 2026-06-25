@@ -1,12 +1,13 @@
 # NAME: WeChatDirectIP
 # DESCRIPTION: WeChat image and file transfer IP ranges routed directly.
 # UPDATED: 2026-06-25
-# IP-CIDR: 8
-# TOTAL: 8
+# IP-CIDR: 9
+# TOTAL: 9
 payload:
-  - 109.244.255.252/32
+  - 109.244.255.0/24
   - 109.244.190.112/32
   - 175.27.0.0/16
+  - 43.137.214.0/24
   - 43.137.215.0/24
   - 43.137.221.0/24
   - 43.141.59.26/32
