@@ -1,0 +1,69 @@
+name: Update Adobe Block Rules
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Convert hosts list to Clash rules
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime, timezone
+          from pathlib import Path
+          import urllib.request
+
+          source_url = "https://a.dove.isdumb.one/list.txt"
+          request = urllib.request.Request(
+              source_url,
+              headers={"User-Agent": "Mozilla/5.0 ClashRuleUpdater/1.0"},
+          )
+          text = urllib.request.urlopen(request, timeout=30).read().decode("utf-8", "replace")
+
+          domains = []
+          seen = set()
+          for line in text.splitlines():
+              line = line.strip()
+              if not line or line.startswith("#"):
+                  continue
+              parts = line.split()
+              if len(parts) < 2 or parts[0] not in {"0.0.0.0", "127.0.0.1", "::1"}:
+                  continue
+              domain = parts[1].strip().lower().rstrip(".")
+              if domain and domain not in seen:
+                  seen.add(domain)
+                  domains.append(domain)
+
+          updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+          lines = [
+              "# NAME: AdobeBlock",
+              "# DESCRIPTION: Adobe telemetry and popup domains converted from a.dove.isdumb.one/list.txt",
+              f"# UPDATED: {updated}",
+              f"# DOMAIN: {len(domains)}",
+              f"# TOTAL: {len(domains)}",
+              "payload:",
+              *[f"  - DOMAIN,{domain}" for domain in domains],
+          ]
+          Path("AdobeBlock.yaml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+          PY
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet AdobeBlock.yaml; then
+            echo "No Adobe rule changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add AdobeBlock.yaml
+          git commit -m "Update Adobe block rules"
+          git push
