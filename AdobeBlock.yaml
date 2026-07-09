@@ -1,9 +1,11 @@
 # NAME: AdobeBlock
 # DESCRIPTION: Adobe telemetry and popup domains converted from a.dove.isdumb.one/list.txt
 # UPDATED: 2026-07-09 08:13 UTC
-# DOMAIN: 3602
-# TOTAL: 3602
+# DOMAIN: 3604
+# TOTAL: 3604
 payload:
+  - DOMAIN-SUFFIX,adobestats.io
+  - DOMAIN,adobeid-na1.services.adobe.com
   - DOMAIN,ic.adobe.io
   - DOMAIN,cc-api-data.adobe.io
   - DOMAIN,fp.adobestats.io

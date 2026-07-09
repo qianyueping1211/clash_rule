@@ -44,13 +44,19 @@ jobs:
                   domains.append(domain)
 
           updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+          custom_rules = [
+              "DOMAIN-SUFFIX,adobestats.io",
+              "DOMAIN,adobeid-na1.services.adobe.com",
+          ]
+
           lines = [
               "# NAME: AdobeBlock",
               "# DESCRIPTION: Adobe telemetry and popup domains converted from a.dove.isdumb.one/list.txt",
               f"# UPDATED: {updated}",
-              f"# DOMAIN: {len(domains)}",
-              f"# TOTAL: {len(domains)}",
+              f"# DOMAIN: {len(domains) + len(custom_rules)}",
+              f"# TOTAL: {len(domains) + len(custom_rules)}",
               "payload:",
+              *[f"  - {rule}" for rule in custom_rules],
               *[f"  - DOMAIN,{domain}" for domain in domains],
           ]
           Path("AdobeBlock.yaml").write_text("\n".join(lines) + "\n", encoding="utf-8")
