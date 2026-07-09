@@ -46,6 +46,7 @@ jobs:
           updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
           custom_rules = [
               "DOMAIN-SUFFIX,adobestats.io",
+              "DOMAIN-SUFFIX,adobedtm.com",
               "DOMAIN,adobeid-na1.services.adobe.com",
           ]
 
