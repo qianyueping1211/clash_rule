@@ -1,0 +1,7 @@
+# NAME: SaudiProxy
+# DESCRIPTION: Domains routed through the Saudi proxy group.
+# UPDATED: 2026-07-14
+# DOMAIN: 1
+# TOTAL: 1
+payload:
+  - DOMAIN-SUFFIX,bonc.com.sa
