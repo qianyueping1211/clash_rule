@@ -1,8 +1,7 @@
 # NAME: SaudiProxy
 # DESCRIPTION: Saudi ccTLD domains routed through the Saudi proxy group.
 # UPDATED: 2026-07-17
-# DOMAIN: 2
-# TOTAL: 2
+# DOMAIN: 1
+# TOTAL: 1
 payload:
   - DOMAIN-SUFFIX,sa
-  - DOMAIN-SUFFIX,xn--mgberp4a5d4ar
