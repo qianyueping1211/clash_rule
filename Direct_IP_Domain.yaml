@@ -1,0 +1,10 @@
+# NAME: Direct_IP_Domain
+# DESCRIPTION: Custom IP ranges and domains routed directly by a Clash rule-provider.
+# UPDATED: 2026-08-03
+# IP-CIDR: 2
+# DOMAIN-SUFFIX: 1
+# TOTAL: 3
+payload:
+  - IP-CIDR,36.163.157.14/32,no-resolve
+  - IP-CIDR,100.66.1.5/32,no-resolve
+  - DOMAIN-SUFFIX,yueping1211.top
