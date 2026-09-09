@@ -1,9 +1,13 @@
 # NAME: AppleProxy
-# DESCRIPTION: Custom Apple-related domains routed by a Clash rule-provider.
-# UPDATED: 2026-06-25
+# DESCRIPTION: Custom Apple-related rules routed by a Clash rule-provider.
+# SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+# SOURCE_UPDATED: 2026-03-06 02:37:19
+# DOMAIN-KEYWORD: 16
 # DOMAIN-SUFFIX: 5
-# DOMAIN-KEYWORD: 9
-# TOTAL: 14
+# IP-CIDR: 10
+# IP-CIDR6: 3
+# PROCESS-NAME: 13
+# TOTAL: 47
 payload:
   - DOMAIN-SUFFIX,itunes.apple.com
   - DOMAIN-SUFFIX,mzstatic.com
@@ -19,3 +23,36 @@ payload:
   - DOMAIN-KEYWORD,apple-relay.cloudflare.com
   - DOMAIN-KEYWORD,apple-relay.fastly-edge.com
   - DOMAIN-KEYWORD,apple-relay.mask.apple-dns.net
+  - DOMAIN-KEYWORD,apple-support.akadns.net
+  - DOMAIN-KEYWORD,apple.com.akadns.net
+  - DOMAIN-KEYWORD,apple.com.edgekey.net
+  - DOMAIN-KEYWORD,buy.itunes.apple.com
+  - DOMAIN-KEYWORD,smp-device
+  - DOMAIN-KEYWORD,testflight
+  - DOMAIN-KEYWORD,icloud.com.akadns.net
+  - IP-CIDR,139.178.128.0/18
+  - IP-CIDR,144.178.0.0/19
+  - IP-CIDR,144.178.36.0/22
+  - IP-CIDR,144.178.48.0/20
+  - IP-CIDR,17.0.0.0/8
+  - IP-CIDR,192.35.50.0/24
+  - IP-CIDR,198.183.17.0/24
+  - IP-CIDR,205.180.175.0/24
+  - IP-CIDR,63.92.224.0/19
+  - IP-CIDR,65.199.22.0/23
+  - IP-CIDR6,2403:300::/32
+  - IP-CIDR6,2620:149::/32
+  - IP-CIDR6,2a01:b740::/32
+  - PROCESS-NAME,CoreLocationAgent
+  - PROCESS-NAME,WeatherWidget
+  - PROCESS-NAME,apsd
+  - PROCESS-NAME,com.apple.Maps
+  - PROCESS-NAME,findmydevice-user-agent
+  - PROCESS-NAME,fmfd
+  - PROCESS-NAME,mapspushd
+  - PROCESS-NAME,netbiosd
+  - PROCESS-NAME,trustd
+  - PROCESS-NAME,com.apple.geod
+  - PROCESS-NAME,Music
+  - PROCESS-NAME,LookupViewService
+  - PROCESS-NAME,TV
