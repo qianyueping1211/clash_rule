@@ -1,10 +1,14 @@
 # NAME: WeChat
-# DESCRIPTION: Custom WeChat rules converted from qsoyq/stash domain and IP rules.
+# DESCRIPTION: Custom WeChat rules merged from qsoyq/stash domain/IP rules and blackmatrix7 QuantumultX list.
 # SOURCE_DOMAIN: https://raw.githubusercontent.com/qsoyq/stash/main/ruleset/domain.wechat.yaml
 # SOURCE_IP: https://raw.githubusercontent.com/qsoyq/stash/main/ruleset/ip.wechat.yaml
-# DOMAIN-SUFFIX: 14
+# SOURCE_BLACKMATRIX7: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list
+# DOMAIN: 18
+# DOMAIN-SUFFIX: 23
+# IP-ASN: 1
 # IP-CIDR: 9
-# TOTAL: 23
+# USER-AGENT: 2
+# TOTAL: 53
 payload:
   - DOMAIN-SUFFIX,qlogo.cn
   - DOMAIN-SUFFIX,qpic.cn
@@ -29,3 +33,33 @@ payload:
   - IP-CIDR,101.32.133.209/32,no-resolve
   - IP-CIDR,129.226.3.47/32,no-resolve
   - IP-CIDR,129.226.107.244/32,no-resolve
+  - DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+  - DOMAIN,btrace.qq.com
+  - DOMAIN,dl.wechat.com
+  - DOMAIN,dldir1.qq.com
+  - DOMAIN,sgfindershort.wechat.com
+  - DOMAIN,sgilinkshort.wechat.com
+  - DOMAIN,sglong.wechat.com
+  - DOMAIN,sgminorshort.wechat.com
+  - DOMAIN,sgquic.wechat.com
+  - DOMAIN,sgshort.wechat.com
+  - DOMAIN,slife.xy-asia.com
+  - DOMAIN,soup.v.qq.com
+  - DOMAIN,tencentmap.wechat.com
+  - DOMAIN,vweixinf.tc.qq.com
+  - DOMAIN,weixin110.qq.com
+  - DOMAIN,wup.imtt.qq.com
+  - DOMAIN,wx.tenpay.com
+  - DOMAIN,wxapp.tc.qq.com
+  - DOMAIN-SUFFIX,iot-tencent.com
+  - DOMAIN-SUFFIX,lbs.gtimg.com
+  - DOMAIN-SUFFIX,map.qq.com
+  - DOMAIN-SUFFIX,up-hl.3g.qq.com
+  - DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
+  - DOMAIN-SUFFIX,wechatos.net
+  - DOMAIN-SUFFIX,wx.gtimg.com
+  - DOMAIN-SUFFIX,wxs.qq.com
+  - DOMAIN-SUFFIX,yun-hl.3g.qq.com
+  - USER-AGENT,MicroMessenger*
+  - USER-AGENT,WeChat*
+  - IP-ASN,132203
